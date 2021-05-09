@@ -1,0 +1,30 @@
+<table style="margin-left: 20px;">
+    <!-- Table headers -->
+        <th>
+             <tr style="color: black; ">
+    
+            <th>id</th>
+            <th>item</th>
+            <th>status</th>
+          
+    
+            </tr>
+        </th>
+    
+        <tr>
+        {%for m in query%}
+    
+        <td>
+            {{m.id}}
+         </td>
+         <td>
+            {{m.item}}
+        </td>
+        <td>
+            {{m.status}}
+        </td>
+     
+        
+        </tr>
+        {%endfor%}
+     </table>
